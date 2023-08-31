@@ -32,7 +32,7 @@ jobs:
     - run: touch ./out/.nojekyll
     
     - name: Install rsync 📚
-      run: npm ci rsync
+      run: npm ci -g rsync
         
         
     - name: Deploy 🚀

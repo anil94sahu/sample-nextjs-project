@@ -32,8 +32,8 @@ jobs:
     - run: touch ./out/.nojekyll
     
     - name: Install rsync 📚
-      run: |
-        apt-get update && apt-get install -y rsync
+      run: npm ci rsync
+        
         
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
-  const prefix = '/sample-nextjs-project';
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <main className={styles.main}>
       <div className={styles.description}>
